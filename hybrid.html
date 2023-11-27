@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <script src="hybridScript.js"></script>
+    <title>Hybrid Subject Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Hybrid Subject Calculator</h1>
+        
+        <form id="marksForm">
+            <label for="experimentMarks">Experiment Marks (Out of 300):</label>
+            <input type="number" id="experimentMarks" placeholder="Enter marks" required>
+
+            <label for="surpriseTestMarks">Surprise Test Marks(Out of 12):</label>
+            <input type="number" id="surpriseTestMarks" placeholder="Enter marks" required>
+
+            <label for="assignmentMarks">Assignment Marks(Out of 10):</label>
+            <input type="number" id="assignmentMarks" placeholder="Enter marks" required>
+
+            <label for="quizMarks">Quiz Marks(Out of 4):</label>
+            <input type="number" id="quizMarks" placeholder="Enter marks" required>
+
+            <label for="mstsMarks">2 MSTs Marks(Out of 40 MST1+MST2):</label>
+            <input type="number" id="mstsMarks" placeholder="Enter marks" required>
+
+            <label for="mstPracticalMarks">MST Practical Marks(Out of 10):</label>
+            <input type="number" id="mstPracticalMarks" placeholder="Enter marks" required>
+
+            <label for="finalPracticalMarks">Final Practical Marks(Out of 40):</label>
+            <input type="number" id="finalPracticalMarks" placeholder="Enter marks" required>
+
+            <label for="finalTheoryMarks">Final Theory Marks(Out of 60):</label>
+            <input type="number" id="finalTheoryMarks" placeholder="Enter marks" required>
+
+            <label for="attendanceCheckbox">Attendance (More than 90%):</label>
+            <input type="checkbox" id="attendanceCheckbox">
+
+            <button type="button" onclick="calculateMarks()">Calculate</button>
+
+            <h2>Total Marks: <span id="totalMarks">0</span></h2>
+        </form>
+    </div>
+</body>
+</html>
